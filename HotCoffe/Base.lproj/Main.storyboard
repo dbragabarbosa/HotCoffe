@@ -50,10 +50,68 @@
                     <view key="view" contentMode="scaleToFill" id="8NY-J4-D6H">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="g7c-Ff-WqL">
+                                <rect key="frame" x="0.0" y="56" width="393" height="391.66666666666669"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="22Q-9k-Q7r">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="22Q-9k-Q7r" id="lCp-sQ-Gpj">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5uF-bC-W48">
+                                <rect key="frame" x="93.666666666666686" y="497" width="206" height="66"/>
+                                <segments>
+                                    <segment title="Small"/>
+                                    <segment title="Medium"/>
+                                    <segment title="Large"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iUK-ni-4bR">
+                                <rect key="frame" x="96.666666666666686" y="644" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="HJF-ZI-VIR"/>
+                                    <constraint firstAttribute="height" constant="34" id="fJ1-a3-5qM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5AP-7M-13v">
+                                <rect key="frame" x="96.666666666666686" y="710" width="200" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="bea-rC-XiW"/>
+                                    <constraint firstAttribute="height" constant="34" id="nb2-UQ-q9M"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="KQy-Tk-pA2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g7c-Ff-WqL" firstAttribute="width" secondItem="8NY-J4-D6H" secondAttribute="width" id="1hS-wE-dwP"/>
+                            <constraint firstItem="g7c-Ff-WqL" firstAttribute="top" secondItem="KQy-Tk-pA2" secondAttribute="top" id="Ee0-K8-eyD"/>
+                            <constraint firstItem="5AP-7M-13v" firstAttribute="top" secondItem="iUK-ni-4bR" secondAttribute="bottom" constant="32" id="ZiI-DU-Bd9"/>
+                            <constraint firstItem="5uF-bC-W48" firstAttribute="centerX" secondItem="8NY-J4-D6H" secondAttribute="centerX" id="aXm-at-4WW"/>
+                            <constraint firstItem="g7c-Ff-WqL" firstAttribute="leading" secondItem="KQy-Tk-pA2" secondAttribute="leading" id="cNW-yv-1uj"/>
+                            <constraint firstItem="iUK-ni-4bR" firstAttribute="centerX" secondItem="8NY-J4-D6H" secondAttribute="centerX" id="fkW-TN-Kp6"/>
+                            <constraint firstItem="iUK-ni-4bR" firstAttribute="top" secondItem="5uF-bC-W48" secondAttribute="bottom" constant="82" id="gwD-C5-Wj4"/>
+                            <constraint firstItem="g7c-Ff-WqL" firstAttribute="height" secondItem="8NY-J4-D6H" secondAttribute="height" multiplier="0.5" id="hUI-Kd-uXV"/>
+                            <constraint firstItem="KQy-Tk-pA2" firstAttribute="bottom" secondItem="5AP-7M-13v" secondAttribute="bottom" constant="39" id="hxj-pN-NGJ"/>
+                            <constraint firstItem="5AP-7M-13v" firstAttribute="centerX" secondItem="8NY-J4-D6H" secondAttribute="centerX" id="ijl-Ql-5hS"/>
+                            <constraint firstItem="5uF-bC-W48" firstAttribute="top" secondItem="g7c-Ff-WqL" secondAttribute="bottom" constant="49.333333333333314" id="mY9-Ig-kRf"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Add New Order" id="JWY-kn-Zu7"/>
+                    <navigationItem key="navigationItem" title="Add New Order" id="JWY-kn-Zu7">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="aQu-na-PSB"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="w8D-lL-Uk7"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oa7-zT-h8X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
