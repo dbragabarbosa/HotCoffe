@@ -11,6 +11,7 @@ enum CoffeType: String, Codable
 {
     case cappuccino
     case latte
+    case lattee
     case espressino
     case cortado
 }
