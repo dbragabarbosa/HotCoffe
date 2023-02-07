@@ -17,6 +17,7 @@
 		ED6B87152982BBBC000619B0 /* AddOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6B87142982BBBC000619B0 /* AddOrderViewController.swift */; };
 		ED7D2EB12987FB97005D7AB1 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED7D2EB02987FB97005D7AB1 /* Webservice.swift */; };
 		ED928917298950EF00409518 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED928916298950EF00409518 /* Order.swift */; };
+		EDF5C0592992851F00C6FBEF /* AddCoffeeOrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDF5C0582992851F00C6FBEF /* AddCoffeeOrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		ED6B87142982BBBC000619B0 /* AddOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddOrderViewController.swift; sourceTree = "<group>"; };
 		ED7D2EB02987FB97005D7AB1 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 		ED928916298950EF00409518 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		EDF5C0582992851F00C6FBEF /* AddCoffeeOrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCoffeeOrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,7 @@
 			isa = PBXGroup;
 			children = (
 				ED1CA7DA298DB2A900231C47 /* OrderViewModel.swift */,
+				EDF5C0582992851F00C6FBEF /* AddCoffeeOrderViewModel.swift */,
 			);
 			path = "VIew Models";
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED928917298950EF00409518 /* Order.swift in Sources */,
+				EDF5C0592992851F00C6FBEF /* AddCoffeeOrderViewModel.swift in Sources */,
 				ED6B86FE2982B823000619B0 /* AppDelegate.swift in Sources */,
 				ED6B87002982B823000619B0 /* SceneDelegate.swift in Sources */,
 				ED6B87132982BB4C000619B0 /* OrdersTableViewController.swift in Sources */,
