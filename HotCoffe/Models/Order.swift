@@ -18,8 +18,11 @@ enum CoffeeType: String, Codable, CaseIterable
 enum CoffeSize: String, Codable, CaseIterable
 {
     case small
+//    case Pequeno
     case medium
+//    case Medio
     case large
+//    case Grande
 }
 
 struct Order: Codable
